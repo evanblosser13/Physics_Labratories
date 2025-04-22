@@ -1,0 +1,134 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4624,        126]
+NotebookOptionsPosition[      4044,        108]
+NotebookOutlinePosition[      4451,        124]
+CellTagsIndexPosition[      4408,        121]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+    "filename", "=", 
+     "\"\<D:\\\\OU Fall 2023\\\\Advnaced Lab lets \
+GO!\\\\Cavendish\\\\runs\\\\run1.MOV\>\""}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"frames", "=", 
+     RowBox[{"Import", "[", 
+      RowBox[{"filename", ",", "\"\<ImageList\>\""}], "]"}]}], 
+    ";"}]}]}]], "Input",
+ CellLabel->"In[24]:=",ExpressionUUID->"15a566d8-d180-418b-8205-f606e4a74ca6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "Get", " ", "video", " ", "dimensions", " ", "for", " ", "cropping"}], 
+   "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"Manipulate", "[", 
+   RowBox[{
+    RowBox[{"ImageTake", "[", 
+     RowBox[{
+      RowBox[{"frames", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"a", ",", "b"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"c", ",", "d"}], "}"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "1", ",", "1080"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"b", ",", "2", ",", "1080"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"c", ",", "1", ",", "1920"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"d", ",", "2", ",", "1920"}], "}"}]}], "]"}]}]], "Input",
+ CellLabel->"In[26]:=",ExpressionUUID->"c7f962b9-9078-4f17-ac6d-5e24fa2b432f"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 232., $CellContext`b$$ = 
+    370., $CellContext`c$$ = 1, $CellContext`d$$ = 1892., Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`a$$], 1, 1080}, {
+      Hold[$CellContext`b$$], 2, 1080}, {
+      Hold[$CellContext`c$$], 1, 1920}, {
+      Hold[$CellContext`d$$], 2, 1920}}, Typeset`size$$ = {
+    554., {18., 22.700845665961943`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 1, $CellContext`b$$ = 
+        2, $CellContext`c$$ = 1, $CellContext`d$$ = 2}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ImageTake[
+        Part[$CellContext`frames, 
+         1], {$CellContext`a$$, $CellContext`b$$}, {$CellContext`c$$, \
+$CellContext`d$$}], 
+      "Specifications" :> {{$CellContext`a$$, 1, 1080}, {$CellContext`b$$, 2, 
+         1080}, {$CellContext`c$$, 1, 1920}, {$CellContext`d$$, 2, 1920}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{602., {162.63403309800196`, 168.36596690199804`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.9034485868699913`*^9, 3.9034486087858987`*^9}},
+ CellLabel->"Out[26]=",ExpressionUUID->"ab77b5e1-72f4-4053-abef-a04e52ab168f"]
+}, Open  ]]
+},
+WindowSize->{718.5, 735.75},
+WindowMargins->{{Automatic, 183}, {Automatic, 98.25}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"2f627a30-4a33-4d0f-a54a-5ee06f559319"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 469, 13, 67, "Input",ExpressionUUID->"15a566d8-d180-418b-8205-f606e4a74ca6"],
+Cell[CellGroupData[{
+Cell[1052, 37, 853, 24, 67, "Input",ExpressionUUID->"c7f962b9-9078-4f17-ac6d-5e24fa2b432f"],
+Cell[1908, 63, 2120, 42, 373, "Output",ExpressionUUID->"ab77b5e1-72f4-4053-abef-a04e52ab168f"]
+}, Open  ]]
+}
+]
+*)
+
